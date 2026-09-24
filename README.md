@@ -8,9 +8,9 @@ By [Toritte](https://github.com/Toritte). Select different exosuits, FRVs and ta
 ## Installation
 1. Close the game.
 2. Import the installable Vehicle MultiSelect ZIP into **Arsenal** or **Helldivers 2 Mod Manager**.
-2-1. If you have installed **Bingus Shared Loader** made by [CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/), **YOU MUST PLACE THIS MOD ABOVE THE LOADER, OTHERWISE IT WOULD NOT WORK.**
-3. Open **EDIT**, check the vehicle categories you want, enable the mod and **Deploy**.
-4. Start the game and select your vehicles. Restart the game after changing options.
+3. 2-1. If you have installed **Bingus Shared Loader** made by [CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/), **YOU MUST PLACE THIS MOD ABOVE THE LOADER, OTHERWISE IT WOULD NOT WORK.**
+4. Open **EDIT**, check the vehicle categories you want, enable the mod and **Deploy**.
+5. Start the game and select your vehicles. Restart the game after changing options.
 
 ## Uninstallation :
 Close the game, You must fully close the game to uninstall the mod.
