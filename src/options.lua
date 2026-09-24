@@ -1,4 +1,5 @@
-return function(blobs)
+return function(blobs,resource_id)
+    resource_id=resource_id or "\250\149\024\105\147\223\118\244"
     local groups={
         {name='exosuit',ids={27,10,91,88},mask=0x10},
         {name='frv',ids={105,26,135},mask=0x20},
@@ -11,7 +12,7 @@ return function(blobs)
     local seen={}
     for _,blob in ipairs(blobs) do
         if #blob>=205 and u32(blob,0)==0xf0000011 and u32(blob,4)==1 and u32(blob,8)==1
-            and blob:sub(105,112)=='\250\149\024\105\147\223\118\244'
+            and blob:sub(105,112)==resource_id
             and blob:sub(113,120)=='\226\023\209\044\250\141\078\161'
             and u32(blob,120)==192 and u32(blob,124)==0 then
             local size=u32(blob,160)

@@ -1,0 +1,11 @@
+{
+  "version": "0.12",
+  "boot_replaced": false,
+  "entry_resource": "core/wwise/lua/wwise_flow_callbacks",
+  "discovery_resource": "mods/toritte/vehicle_multiselect",
+  "bundles_bingus": false,
+  "recognized_loader_payload_sha256": "51E603A229A24FF53A046362F1467BA42A3C7DD5D76817FFCFF7067E35D3859A",
+  "gameplay_verified": true,
+  "package_variant": "noimages",
+  "verification_basis": "User confirmed selection and spawning without Bingus, and with Bingus v17, HUD+ and Vanilla Plus Megapack in the supplied HD2MM order (Bingus below Vehicle)."
+}

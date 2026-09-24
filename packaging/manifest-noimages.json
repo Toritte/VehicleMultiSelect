@@ -9,25 +9,21 @@
       "Description": "Enable multi-selection for Exosuit. May be combined with the other options.",
       "Include": [
         "Addon/Exosuit"
-      ],
-      "Image": "Images/ExosuitMultiSelectThumbnail.png"
+      ]
     },
     {
       "Name": "FRV",
       "Description": "Enable multi-selection for FRV. May be combined with the other options.",
       "Include": [
         "Addon/FRV"
-      ],
-      "Image": "Images/FRVMultiSelectThumbnail.png"
+      ]
     },
     {
       "Name": "Tank",
       "Description": "Enable multi-selection for Tank. May be combined with the other options.",
       "Include": [
         "Addon/Tank"
-      ],
-      "Image": "Images/TankMultiSelectThumbnail.png"
+      ]
     }
-  ],
-  "IconPath": "thumbnail.png"
+  ]
 }

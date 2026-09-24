@@ -1,9 +1,9 @@
 # Technical walkthrough
 
 ## Startup and options
-Each manager option includes one archive replacing the existing boot Lua resource plus empty companion files. The three wrappers share the same logic and differ in an embedded category token. Whichever wrapper takes precedence executes the pinned original boot once, preserves its return values, then installs a chained update callback.
+Each manager option includes a startup archive replacing the existing Wwise callback Lua resource (`core/wwise/lua/wwise_flow_callbacks`) plus empty companion files. The three wrappers share the same logic and differ in an embedded category token. The selected startup preserves return values and installs a chained update callback; v0.12 optionally delegates startup to an installed loader as described below.
 
-After validating the game executable and game.dll hashes, the callback reads deployed archives in the game's data directory using Unicode Windows APIs. It examines only numeric 9ba626afa44a3aa3.patch_* filenames and recognizes the expected single-boot archive layout and category tokens. It does not query or add engine resources and does not load arbitrary third-party Lua. Tokens are configuration markers, not security authentication.
+After validating the game executable and game.dll hashes, the callback reads deployed archives in the game's data directory using Unicode Windows APIs. It examines only numeric 9ba626afa44a3aa3.patch_* filenames and recognizes the expected single-Wwise-resource archive layout and category tokens. It does not query or add engine resources and does not load arbitrary third-party Lua. Tokens are configuration markers, not security authentication.
 
 The scan limits enumeration to 4,096 candidate files, skips files outside 192–131,072 bytes and caps total reads at 16 MiB. Stale deployed option archives can affect detection; remove old packages and redeploy when changing versions. No files are modified by the scan.
 
@@ -19,3 +19,9 @@ manifest.json configures the manager. VehicleMultiSelect-manifest.json records f
 
 ## Verification scope
 The author reported successful standalone options operation and confirmed the artwork package. All seven option combinations are covered by offline tests. Windows file enumeration and reads were tested using a Unicode path. Package extraction was checked using the manager's SharpCompress version.
+
+## Runtime compatibility
+Boot is not replaced. Internal diagnostic labels retain the tested runtime names to preserve the verified bytecode. Other Wwise replacements require a compatible startup route.
+
+## v0.12 optional loader startup
+Each option also includes the declared mods/toritte/vehicle_multiselect resource. A winning Bingus loader discovers it; a winning Vehicle startup delegates to the recognized installed v16 payload, or starts standalone. Only one selected path initializes the original audio callbacks. Setup is guarded against repeated initialization. The v17 configuration confirmed by the author puts Bingus below Vehicle in HD2MM.
