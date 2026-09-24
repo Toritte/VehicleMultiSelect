@@ -1,0 +1,33 @@
+{
+  "Version": 1,
+  "Guid": "8ba6da59-4442-433c-9832-dc4c36f9be26",
+  "Name": "Vehicle MultiSelect v0.1",
+  "Description": "Select different vehicles together. Steam build 25480438.",
+  "Options": [
+    {
+      "Name": "Exosuit",
+      "Description": "Enable multi-selection for Exosuit. May be combined with the other options.",
+      "Include": [
+        "Addon/Exosuit"
+      ],
+      "Image": "Images/ExosuitMultiSelectThumbnail.png"
+    },
+    {
+      "Name": "FRV",
+      "Description": "Enable multi-selection for FRV. May be combined with the other options.",
+      "Include": [
+        "Addon/FRV"
+      ],
+      "Image": "Images/FRVMultiSelectThumbnail.png"
+    },
+    {
+      "Name": "Tank",
+      "Description": "Enable multi-selection for Tank. May be combined with the other options.",
+      "Include": [
+        "Addon/Tank"
+      ],
+      "Image": "Images/TankMultiSelectThumbnail.png"
+    }
+  ],
+  "IconPath": "thumbnail.png"
+}
