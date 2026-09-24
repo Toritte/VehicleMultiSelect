@@ -29,7 +29,7 @@ stratagem multiple times is not supported for this mod this time.
 | --- | --- |
 | Exosuit | Four exosuit variants |
 | FRV | Three FRV variants |
-| Tank | Bastion and STORM |
+| Tank | Bastion and Maelstrom |
 
 Only vehicles available to your account can be selected. You still have four stratagem slots in total.
 
