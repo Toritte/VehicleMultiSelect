@@ -5,7 +5,7 @@ Allows Multiple Selection of Any Vehicles.
 Installation : 
 1.  Close the game.
 2.  Import the installable ZIP into Arsenal or HD2MM.
-2-1. If you have installed Bingus Shared Loader made by CowboyBingus, YOU MUST PLACE THIS MOD ABOVE THE LOADER, OTHERWISE IT WOULD NOT WORK.
+2-1. If you have installed Bingus Shared Loader made by CowboyBingus, YOU MUST PLACE THIS MOD FOLLOWING THE LOADER'S INSTRUCTION, OTHERWISE IT WOULD NOT WORK, OTHERWISE IT WOULD NOT WORK.
 3.  Check options you'd like among Exosuit, FRV and/or Tank, enable the mod, then Deploy.
 4.  Start the game.
     If you wish to change any options, please do close the game beforehand.
