@@ -1,11 +1,10 @@
-Vehicle MultiSelect v0.12 — Toritte
+Vehicle MultiSelect v0.13 — Toritte
 Allows Multiple Selection of Any Vehicles.
 
 
 Installation : 
 1.  Close the game.
 2.  Import the installable ZIP into Arsenal or HD2MM.
-2-1. If you have installed Bingus Shared Loader made by CowboyBingus, YOU MUST PLACE THIS MOD FOLLOWING THE LOADER'S INSTRUCTION, OTHERWISE IT WOULD NOT WORK, OTHERWISE IT WOULD NOT WORK.
 3.  Check options you'd like among Exosuit, FRV and/or Tank, enable the mod, then Deploy.
 4.  Start the game.
     If you wish to change any options, please do close the game beforehand.
@@ -32,7 +31,7 @@ PACKAGE CONTENTS
 Addon/Exosuit, Addon/FRV, Addon/Tank: game patch files.
 manifest.json: manager configuration.
 VehicleMultiSelect-manifest.json: build hashes and verification scope.
-thumbnail.png and Images/: representative and option artwork.
+This package omits representative and option artwork.
 
 
 AI assistance: GPT-6 Astra (research, implementation, debugging, documentation).

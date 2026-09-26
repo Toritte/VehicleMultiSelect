@@ -25,3 +25,6 @@ Boot is not replaced. Internal diagnostic labels retain the tested runtime names
 
 ## v0.12 optional loader startup
 Each option also includes the declared mods/toritte/vehicle_multiselect resource. A winning Bingus loader discovers it; a winning Vehicle startup delegates to the recognized installed v16 payload, or starts standalone. Only one selected path initializes the original audio callbacks. Setup is guarded against repeated initialization. The v17 configuration confirmed by the author puts Bingus below Vehicle in HD2MM.
+
+## v0.13 loader recognition
+The supplied v16 and v17 payloads differ only in one ASCII digit in the diagnostic log label. Recognition normalizes exactly one two-digit loader-vNN label with API 1, then checks the complete resource SHA-256. It returns the unmodified installed bytecode. Unknown code changes, API changes, missing or duplicate labels remain rejected. This reduces metadata-only update breakage without treating arbitrary startup wrappers as loaders. Shared-resource warnings can remain because the archive identities are unchanged.

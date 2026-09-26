@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.13
+- Fixes delegation to Bingus Shared Loader v17 when the Vehicle startup takes priority.
+- Ignores only the two-digit loader version in its API 1 diagnostic label when validating the otherwise identical loader implementation.
+- Keeps standalone startup, independent vehicle options and the declared Bingus addon.
+- Preserves the installed loader bytes when executing it; no Bingus code is bundled.
+
 ## v0.12
 - Adds optional Bingus Shared Loader integration while retaining standalone startup.
 - Adds a discoverable vehicle module and delegation to the recognized installed v16 loader.

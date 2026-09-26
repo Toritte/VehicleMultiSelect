@@ -4,7 +4,7 @@ from lupa.luajit21 import LuaRuntime
 R=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(R/'scripts'))
 from archive_format import archive_for
-from build_auto_candidate import setup_source,ENTRY,startup
+from runtime import setup_source,ENTRY,startup
 
 class AutoTests(unittest.TestCase):
     def test_hash_native(self):
@@ -21,7 +21,7 @@ for _,mode in ipairs({'absent','present','scan_error','loader_error','stock_erro
  local stock_calls,loader_calls,setup_calls=0,0,0
  local saved=loadstring
  loadstring=function(bytes,name)
-  assert(bytes=='installed' and name=='@installed_bingus_v16')
+  assert(bytes=='installed' and name=='@installed_bingus')
   return function(...)loader_calls=loader_calls+1;if mode=='loader_error' then error('loader_error')end;return nil,9,... end
  end
  local stock=function(...)stock_calls=stock_calls+1;if mode=='stock_error' then error('stock_error')end;return nil,9,... end
@@ -54,3 +54,20 @@ end
         lua.globals().blobs=lua.table_from([b])
         lua.globals().identify=identify
         lua.execute(b'assert(identify(blobs,function()return "unknown"end)==nil)')
+
+    def test_only_diagnostic_label_is_normalized(self):
+        lua=LuaRuntime(encoding=None)
+        identify=lua.execute((R/'src/optional_loader.lua').read_bytes())
+        baseline=b'fixed-code:Bingus Shared Loader loader-v16; API 1\n:end'
+        envelope=lambda b:struct.pack('<II',len(b),2)+b
+        expected=b'51E603A229A24FF53A046362F1467BA42A3C7DD5D76817FFCFF7067E35D3859A'
+        def check_hash(b):
+            return expected if b==envelope(baseline) else b'unknown'
+        for version in (b'16',b'17',b'18',b'99'):
+            body=baseline.replace(b'v16;',b'v'+version+b';')
+            blob=archive_for(envelope(body),ENTRY)
+            self.assertEqual(identify(lua.table_from([blob]),check_hash),body)
+        for body in (baseline.replace(b'fixed-code',b'other-code'),
+                     baseline.replace(b'API 1',b'API 2'),
+                     baseline.replace(b'v16;',b'v100;'),baseline+baseline):
+            self.assertIsNone(identify(lua.table_from([archive_for(envelope(body),ENTRY)]),check_hash))

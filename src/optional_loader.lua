@@ -1,4 +1,5 @@
--- Recognize a tested, separately installed loader; never bundle its payload.
+-- Recognize the tested loader implementation, ignoring only its two-digit log label.
+-- Everything else, including API and executable bytecode, must match exactly.
 return function(blobs,hash)
     local expected='51E603A229A24FF53A046362F1467BA42A3C7DD5D76817FFCFF7067E35D3859A'
     local function u32(s,o)
@@ -14,7 +15,9 @@ return function(blobs,hash)
             local size=u32(blob,160)
             if size>=13 and 192+size<=#blob and u32(blob,192)==size-8 and u32(blob,196)==2 then
                 local payload=blob:sub(193,192+size)
-                if hash(payload)==expected then result=payload:sub(9) end
+                local normalized,count=payload:gsub('Bingus Shared Loader loader%-v%d%d; API 1\n',
+                    'Bingus Shared Loader loader-v16; API 1\n')
+                if count==1 and hash(normalized)==expected then result=payload:sub(9) end
             end
         end
     end

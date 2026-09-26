@@ -5,7 +5,7 @@ return function(stock,find_loader,setup,...)
     if not ok then
         pcall(print,'[VehicleMultiSelectStandalone] loader detection failed: '..tostring(loader))
     elseif loader then
-        selected=assert(loadstring(loader,'@installed_bingus_v16'))
+        selected=assert(loadstring(loader,'@installed_bingus'))
     end
     local function after(...)
         local success,reason=pcall(setup)

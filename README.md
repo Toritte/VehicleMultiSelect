@@ -1,4 +1,4 @@
-# Vehicle MultiSelect v0.12
+# Vehicle MultiSelect v0.13
 ![Vehicle MultiSelect](assets/banner.png)
 
 By [Toritte](https://github.com/Toritte). Select different exosuits, FRVs and tanks together in Helldivers 2's standard four stratagem slots.
@@ -43,3 +43,5 @@ Supports Steam build **25480438**. Game updates may require a mod update. User-c
 Source and documentation are prepared for GitHub.
 
 AI disclosure: OpenAI Codex assisted with research, implementation, debugging and documentation.
+
+Version 0.13 accepts the supplied Bingus v16 and v17 implementation even when Vehicle startup wins. Only the loader’s two-digit diagnostic version label is normalized; changes to its executable implementation still require compatibility review. Mod managers may continue to report a shared Wwise resource.
