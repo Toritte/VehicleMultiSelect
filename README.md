@@ -1,4 +1,4 @@
-# Vehicle MultiSelect v0.13
+# Vehicle MultiSelect
 ![Vehicle MultiSelect](assets/banner.png)
 
 By [Toritte](https://github.com/Toritte). Select different exosuits, FRVs and tanks together in Helldivers 2's standard four stratagem slots.
@@ -34,7 +34,7 @@ stratagem multiple times is not supported for this mod this time.
 Only vehicles available to your account can be selected. You still have four stratagem slots in total.
 
 ## Compatibility
-Supports Steam build **25480438**. Game updates may require a mod update. User-confirmed working with HD2 HUD+ 0.1.12. This version leaves boot unchanged and replaces `core/wwise/lua/wwise_flow_callbacks`. Bingus is optional. Do not combine with earlier or separate MultiSelect packages. The shared loader is not required; compatibility with unrelated mods must be assessed separately.
+Current version **v0.13**, Supports Steam build **25480438**. Game updates may require a mod update. Confirmed working with HD2 HUD+ 0.1.12. This version leaves boot unchanged and replaces `core/wwise/lua/wwise_flow_callbacks`. Bingus is optional. Do not combine with earlier or separate MultiSelect packages. The shared loader is not required; compatibility with unrelated mods must be assessed separately.
 
 ## Documentation
 [Build from source](CONTRIBUTING.md) · [Technical walkthrough](docs/TECHNICAL.md) · [Third-party notices](THIRD_PARTY.md) · [Release notes](docs/RELEASE_NOTES.md) · [Artwork](assets/ARTWORK.md)
