@@ -6,15 +6,20 @@ By [Toritte](https://github.com/Toritte). Select different exosuits, FRVs and ta
 **No Bingus Shared Loader required.** Enable Exosuit, FRV and Tank independently in the mod manager, or combine them. The four-slot limit and vehicle unlock requirements remain unchanged. This mod does not allow duplicate copies of the same stratagem.
 
 ## Installation
-1. Close the game.
-2. Import the installable Vehicle MultiSelect ZIP into **Arsenal** or **Helldivers 2 Mod Manager**.
+&nbsp;1. Close the game.  
 
-If you have installed **Bingus Shared Loader** made by [CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/), **YOU MUST PLACE THIS MOD FOLLOWING THE LOADER'S INSTRUCTION, OTHERWISE IT WOULD NOT WORK. THE LOADER ISN'T MANDATORY, BUT SUPPORT EXIST TO PREVENT INCOMPATIBLE ISSUES.**
+&nbsp;2. Import the installable Vehicle MultiSelect ZIP into **Arsenal** or **Helldivers 2 Mod Manager**.  
 
-Follow the loader's priority instructions. In Arsenal's default priority, put the loader last; **with reversed priority put it first.**
+&nbsp;2-1. If you have installed **Bingus Shared Loader** made by [CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/),  
+&nbsp;**YOU MUST PLACE THIS MOD FOLLOWING THE LOADER'S INSTRUCTION, OTHERWISE IT WOULD NOT WORK.  
+&nbsp;THE LOADER ISN'T MANDATORY, BUT SUPPORT EXIST TO PREVENT INCOMPATIBLE ISSUES.**  
 
-3. Open **EDIT**, check the vehicle categories you want, enable the mod and **Deploy**.
-4. Start the game and select your vehicles. Restart the game after changing options.
+&nbsp;2-2. Follow the loader's priority instructions. In Arsenal's default priority, put the loader last; **with reversed priority put it first.**  
+
+&nbsp;3. Open **EDIT**, check the vehicle categories you want, enable the mod and **Deploy**.  
+
+&nbsp;4. Start the game and select your vehicles. Restart the game after changing options.  
+
 
 ## Uninstallation :
 Close the game, You must fully close the game to uninstall the mod.
@@ -36,11 +41,11 @@ Only vehicles available to your account can be selected. You still have four str
 ## Compatibility
 Current version **v0.13**, Supports Steam build **25480438**. Game updates may require a mod update. Confirmed working with HD2 HUD+ 0.1.12. This version leaves boot unchanged and replaces `core/wwise/lua/wwise_flow_callbacks`. Bingus is optional. Do not combine with earlier or separate MultiSelect packages. The shared loader is not required; compatibility with unrelated mods must be assessed separately.
 
-# Known compatible mods.
-[HD2 HUD Plus by DDRK1ing](https://www.nexusmods.com/helldivers2/mods/15298?tab=files)
-[Vanilla Plus Megapack by CowboyBingus](https://ayakamods.com/mods/vanilla-plus-megapack.3913/)
-[EXO stratagem launcher enabler by 7^6](https://ayakamods.com/mods/exo-stratagem-launcher-enabler.4037/)
-[Bingus Shared Loader by CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/)
+## Known compatible mods.
+&nbsp;[HD2 HUD Plus by DDRK1ing](https://www.nexusmods.com/helldivers2/mods/15298?tab=files)  
+&nbsp;[Vanilla Plus Megapack by CowboyBingus](https://ayakamods.com/mods/vanilla-plus-megapack.3913/)  
+&nbsp;[EXO stratagem launcher enabler by 7^6](https://ayakamods.com/mods/exo-stratagem-launcher-enabler.4037/)  
+&nbsp;[Bingus Shared Loader by CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/)  
 
 ## Documentation
 [Build from source](CONTRIBUTING.md) · [Technical walkthrough](docs/TECHNICAL.md) · [Third-party notices](THIRD_PARTY.md) · [Release notes](docs/RELEASE_NOTES.md) · [Artwork](assets/ARTWORK.md)
