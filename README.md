@@ -36,6 +36,12 @@ Only vehicles available to your account can be selected. You still have four str
 ## Compatibility
 Current version **v0.13**, Supports Steam build **25480438**. Game updates may require a mod update. Confirmed working with HD2 HUD+ 0.1.12. This version leaves boot unchanged and replaces `core/wwise/lua/wwise_flow_callbacks`. Bingus is optional. Do not combine with earlier or separate MultiSelect packages. The shared loader is not required; compatibility with unrelated mods must be assessed separately.
 
+# Known compatible mods.
+[HD2 HUD Plus by DDRK1ing](https://www.nexusmods.com/helldivers2/mods/15298?tab=files)
+[Vanilla Plus Megapack by CowboyBingus](https://ayakamods.com/mods/vanilla-plus-megapack.3913/)
+[EXO stratagem launcher enabler by 7^6](https://ayakamods.com/mods/exo-stratagem-launcher-enabler.4037/)
+[Bingus Shared Loader by CowboyBingus](https://ayakamods.com/mods/bingus-shared-loader.3861/)
+
 ## Documentation
 [Build from source](CONTRIBUTING.md) · [Technical walkthrough](docs/TECHNICAL.md) · [Third-party notices](THIRD_PARTY.md) · [Release notes](docs/RELEASE_NOTES.md) · [Artwork](assets/ARTWORK.md)
 
